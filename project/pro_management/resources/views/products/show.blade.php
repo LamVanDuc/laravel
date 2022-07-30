@@ -29,6 +29,12 @@
                 {{ $product->product_qty }}
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Category : </strong>
+                {{ $product->category->category_name}}
+            </div>
+        </div>
     </div>
 @endsection
 

@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <strong>Product Name:</strong>
                     <input type="text" name="product_name"
-                    value="{{ $products->product_name }}"
+                    value="{{$products->product_name }}"
                     class="form-control" placeholder="product Name">
                 </div>
             </div>

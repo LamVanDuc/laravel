@@ -47,6 +47,16 @@
                  placeholder="Quantity">
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1" name="id_category">
+                    <option>Category</option>
+                    @foreach ($category as $category)
+                        <option value="{{$category->id}}">{{$category->category_name}}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>

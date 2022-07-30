@@ -30,7 +30,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Product Name:</strong>
-                    <input type="text" name="product_name" 
+                    <input type="text" name="product_name"
                     value="{{ $product->product_name }}"
                     class="form-control" placeholder="product Name">
                 </div>
@@ -38,7 +38,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Product Description:</strong>
-                    <textarea class="form-control" name="product_desc" 
+                    <textarea class="form-control" name="product_desc"
                     style="height:150px"
                     placeholder="product Description">{{ $product->product_desc }}
                 </textarea>
@@ -47,9 +47,19 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Qty:</strong>
-                    <input type="number" name="product_qty" class="form-control" 
+                    <input type="number" name="product_qty" class="form-control"
                     style="height:150px"
                     value="{{ $product->product_qty }}"  placeholder="Quantity">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1" name="id_category">
+                        <option value="{{$product->category->id}}">{{$product->category->category_name}}</option>
+                        @foreach ($category as $category)
+                            <option value="{{$category->id}}">{{$category->category_name}}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

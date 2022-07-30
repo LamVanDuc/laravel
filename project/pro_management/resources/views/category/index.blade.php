@@ -9,6 +9,8 @@
         <div class="col-lg-12 text-center" style="margin-top:10px;margin-bottom: 10px;">
             <a class="btn btn-success " href="{{ route('category.create') }}">
                 Add Category</a>
+
+            <a class="btn btn-primary" href="{{ route('products.index') }}"> Product</a>
         </div>
     </div>
 

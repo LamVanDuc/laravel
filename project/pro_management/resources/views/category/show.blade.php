@@ -22,11 +22,10 @@
                     <th>Product Name</th>
                     <th>Product Description</th>
                     <th>Qty.</th>
-                    <th width="280px">More</th>
                 </tr>
                 @foreach ($category->product as $product)
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td>{{++$i}}</td>
                         <td>{{ $product->product_name }}</td>
                         <td>{{ $product->product_desc }}</td>
                         <td>{{ $product->product_qty }}</td>

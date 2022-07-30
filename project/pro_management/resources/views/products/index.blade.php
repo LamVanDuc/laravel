@@ -6,9 +6,10 @@
         <div class="col-lg-12">
             <h2 class="text-center">Product Management</h2>
         </div>
+
         <div class="col-lg-12 text-center" style="margin-top:10px;margin-bottom: 10px;">
-            <a class="btn btn-success " href="{{ route('products.create') }}">
-                 Add product</a>
+            <a class="btn btn-success " href="{{ route('products.create') }}">Add product</a>
+            <a class="btn btn-success " href="{{ route('category.index') }}">Category</a>
         </div>
     </div>
 
@@ -34,11 +35,11 @@
                     <td>{{ $product->product_desc }}</td>
                     <td>{{ $product->product_qty }}</td>
                     <td>
-                        <form action="{{ route('products.destroy',$product->id) }}" 
+                        <form action="{{ route('products.destroy',$product->id) }}"
                             method="POST">
-                            <a class="btn btn-info" 
+                            <a class="btn btn-info"
                             href="{{ route('products.show',$product->id) }}">Show</a>
-                            <a class="btn btn-primary" 
+                            <a class="btn btn-primary"
                             href="{{ route('products.edit',$product->id) }}">Edit</a>
                             @csrf
                             @method('DELETE')

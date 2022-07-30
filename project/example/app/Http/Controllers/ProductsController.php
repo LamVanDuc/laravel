@@ -67,8 +67,8 @@ class ProductsController extends Controller
      */
     public function edit(Products $products)
     {
-        return view('products.edit',compact('products'));
-    }
+        return view("products.edit",compact('products'));
+            }
 
     /**
      * Update the specified resource in storage.
